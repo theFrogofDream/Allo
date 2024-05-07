@@ -79,7 +79,7 @@
                             <br>- Возможность использования независимо от пола и возраста
                         </p>
                         <p class="card-footer">9 900,00 р.</p>
-                        <a onclick="Buy()" class="btn btn-primary">Заказать</a>
+                        <a href="#FuckingStupedForm" class="btn btn-primary Openform">Заказать</a>
                     </div>
                 </div>
                 <p class="text-primary h4">Откройте для себя преимущества наших кафф — украшений, которые обязательно станут неотъемлемой частью вашего стиля</p>
@@ -97,7 +97,7 @@
                             <p class="card-text">Описание каф
                             </p>
                             <p class="card-footer">900,00 р.</p>
-                            <a onclick="Buy()" class="btn btn-primary">Заказать</a>
+                            <a href="#FuckingStupedForm" class="btn btn-primary Openform">Заказать</a>
                         </div>
                     </div>
                     <div class="card bob" style="width: 16rem;">
@@ -107,7 +107,7 @@
                             <p class="card-text">Описание каф
                             </p>
                             <p class="card-footer">700,00 р.</p>
-                            <a onclick="Buy()" class="btn btn-primary">Заказать</a>
+                            <a href="#FuckingStupedForm" class="btn btn-primary Openform">Заказать</a>
                         </div>
                     </div>
                     <div class="card" style="width: 16rem;">
@@ -117,7 +117,7 @@
                             <p class="card-text">Описание каф
                             </p>
                             <p class="card-footer">500,00 р.</p>
-                            <a onclick="Buy()" class="btn btn-primary">Заказать</a>
+                            <a href="#FuckingStupedForm" class="btn btn-primary">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -135,10 +135,44 @@
                     8-960-000-00-00
                 </p>
             </div>
+            <div class="container" id="FuckingStupedForm" >
+                <form class="container py-3" >
+                    <button type="button" class="btn btn-link closeButton">Link</button>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Ваши ФИО*</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="product" class="form-label">Продукция</label>
+                            <select class="form-select" id="products" required>
+                                <option value="">Выбрать...</option>
+                                <option value="product1">Конвектор НИКА-С</option>
+                                <option value="product2">Кафы</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="delivery">
+                            <label for="delivery" class="form-check-label">Доставка</label>
+                            <input type="text" class="form-control" id="adress" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">КУПИТЬ</button>
+                    <div class="small pt-2">
+                        <input type="checkbox" class="form-check-input" id="Oke">
+                        Нажимая кнопку "купить", я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года № 152-ФЗ "О персональных данных"
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"></div>
         </div>
     </div>
 
-    <script src="./js/bootstrap.js"></script>
-<script src="script.js"></script>
+    <script src="./js/bootstrap.js" rel="script"></script>
+    <script src="script.js" rel="script"></script>
 </body>
 </html>
