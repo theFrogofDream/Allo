@@ -33,7 +33,7 @@
                 <source src="video.mp4"/>
             </video>
             <div class="container ">
-                <img src="./img/NIKA-C.png" class="img-fluid float-end col-xl-4 col-md-5 col-sm-6 col-8" >
+                <img src="./img/NIKA-C.png" class="img-fluid float-end col-xl-4 col-md-5 col-sm-6 col-12" >
                 <p class="col-xl-8 col-md-6 col-lg-12 ">В мире неумолимо растет число слабослышащих и тотально неслышащих людей. Более 360 миллионов человек страдают глухотой или нарушением слуха. По данным ВОЗ нарушения слуха — одна из самых распространенных патологий здоровья во всем мире. Как следует из публикуемого сегодня Всемирной организацией здравоохранения (ВОЗ) первого Всемирного доклада по проблемам слуха, к 2050 г. почти 2,5 миллиарда человек во всем мире – т.е. каждый четвертый – будут страдать той или иной степенью потери слуха. Слуховые аппараты улучшают качество жизни 90% людей с проблемами слуха, но все ли хотят, чтобы окружающие знали их особенность? </p>
                 <div class="container"><p>Мы сами студенты и не понаслышке знаем, что наши обучающиеся не всегда слышат преподавателя, особенно, если педагог находится за спиной, и это большая проблема.  Именно поэтому мы разработали уникальное устройство - конвертер «НИКА – С» (приемник, объединяющий предусилитель сигнала и преобразователь речи в текст), чтобы облегчить жизнь людей с нарушением слуха.<br>
                     Мы также постарались сделать и сами слуховые аппараты особенными, чтобы каждый мог наслаждаться полноценным звуком.<br>
@@ -43,13 +43,76 @@
                 </div>
             </div>
             <p class="h3">Продукция</p>
+
             <div class="container" id="Product">
                 <div class="card bob" style="width: 16rem;">
                     <img src="./img/Nika.png" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Конвертор НИКА-С</h5>
                         <p class="card-footer">9 900,00 р.</p>
-                        <a href="#FuckingStupedForm" class="btn btn-primary Openform">Подробнее</a>
+                        <a data-bs-toggle="modal" data-bs-target="#ModalNIKAC" class="btn btn-primary Openform">Подробнее</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="ModalNIKAC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" ></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/Nika.png" class="img-fluid float-start col-4">
+                                <div class="m-t">
+                                    <div class="h3">Конвертор НИКА-С</div>
+                                    <div class="p">Идеальное устройство для ежедневного использования, состоящий из микрофона, вибромоторчика, батареи для заряда, и разьема для зарядки<br><br>Устройство обладает низким весом, обеспечивая комфортное ношение в течении всего дня. Также продуманная конструкция, позволяет не выделяться из общей массы людей.  <br><br>Вес: 500г</div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button data-bs-toggle="modal" data-bs-target="#FuckingStupedForm" class="btn btn-primary Openform">Заказать</button>
+                            </div>
+                        </div>
+                        <div class="modal-xl fade" id="FuckingStupedForm" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5"></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="name" class="form-label">Ваши ФИО*</label>
+                                            <input type="text" class="form-control" id="name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="email" class="form-label">E-mail</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="product" class="form-label">Продукция</label>
+                                            <select class="form-select" id="products" required>
+                                                <option value="">Выбрать...</option>
+                                                <option value="product1">Конвектор НИКА-С</option>
+                                                <option value="product2">Кафы 1</option>
+                                                <option value="product3">Кафы 2</option>
+                                                <option value="product4">Кафы 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="delivery">
+                                            <label for="delivery" class="form-check-label">Доставка</label>
+                                            <input type="text" class="form-control" id="adress" required>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">КУПИТЬ</button>
+                                        <div class="small pt-2">
+                                            <input type="checkbox" class="form-check-input" id="Oke">
+                                            Нажимая кнопку "купить", я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года № 152-ФЗ "О персональных данных"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                     <div class="card bob" style="width: 16rem;">
@@ -57,7 +120,27 @@
                         <div class="card-body">
                             <h5 class="card-title">Кафы</h5>
                             <p class="card-footer">900,00 р.</p>
-                            <a href="#FuckingStupedForm" class="btn btn-primary Openform">Подробнее</a>
+                            <a data-bs-toggle="modal" data-bs-target="#ModalKafa2" class="btn btn-primary Openform">Подробнее</a>
+                        </div>
+                        <div class="modal fade" id="ModalKafa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" ></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/Kafa2(.jpg" class="img-fluid float-start col-4">
+                                        <div class="m-t">
+                                            <div class="h3">Кафа</div>
+                                            <div class="p">Описание<br><br>Вес: Да г</div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button data-bs-toggle="modal" data-bs-target="#FuckingStupedForm" class="btn btn-primary Openform">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card bob" style="width: 16rem;">
@@ -65,17 +148,57 @@
                         <div class="card-body">
                             <h5 class="card-title">Кафы</h5>
                             <p class="card-footer">700,00 р.</p>
-                            <a href="#FuckingStupedForm" class="btn btn-primary Openform">Подробнее</a>
+                            <a data-bs-toggle="modal" data-bs-target="#ModalKafa" class="btn btn-primary Openform">Подробнее</a>
+                        </div>
+                        <div class="modal fade" id="ModalKafa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" ></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/Ka.jpg" class="img-fluid float-start col-4">
+                                        <div class="m-t">
+                                            <div class="h3">Кафа</div>
+                                            <div class="p">Описание<br><br>Вес: Да г</div></div>                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button data-bs-toggle="modal" data-bs-target="#FuckingStupedForm" class="btn btn-primary Openform">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 16rem;">
+                    <div class="card" style="width: 16rem; margin-left: 10px; margin-top: 10px">
                         <img src="./img/Kafa;3.jpg" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Кафы</h5>
                             <p class="card-footer">500,00 р.</p>
-                            <a href="#FuckingStupedForm" class="btn btn-primary">Подробнее</a>
+                            <a data-bs-toggle="modal" data-bs-target="#ModalKafa3" class="btn btn-primary">Подробнее</a>
                         </div>
+                        <div class="modal fade" id="ModalKafa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="./img/Kafa;3.jpg" class="img-fluid float-start col-4">
+                                        <div class="m-t">
+                                            <div class="h3">Конвертор НИКА-С</div>
+                                            <div class="p">Описание<br><br>Вес: Да г</div></div>                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button data-bs-toggle="modal" data-bs-target="#FuckingStupedForm" class="btn btn-primary Openform">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
             </div><div class="containier col-12 bg-white"></div>
             <div class="container" id="Qvest">
                 <p class="h3">Часто задаваемые вопросы</p>
@@ -123,40 +246,8 @@
                 </div>
             </div>
             <br>
-            <div class="container" id="FuckingStupedForm" >
-                <form class="container py-3" >
-                    <button type="button" class="btn btn-link closeButton"></button>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="name" class="form-label">Ваши ФИО*</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="product" class="form-label">Продукция</label>
-                            <select class="form-select" id="products" required>
-                                <option value="">Выбрать...</option>
-                                <option value="product1">Конвектор НИКА-С</option>
-                                <option value="product2">Кафы</option>
-                            </select>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="delivery">
-                            <label for="delivery" class="form-check-label">Доставка</label>
-                            <input type="text" class="form-control" id="adress" required>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">КУПИТЬ</button>
-                    <div class="small pt-2">
-                        <input type="checkbox" class="form-check-input" id="Oke">
-                        Нажимая кнопку "купить", я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года № 152-ФЗ "О персональных данных"
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer"></div>
+    <footer></footer>
+
         </div>
     </div>
 

@@ -1,7 +1,14 @@
 .bob{
     margin-right: 10px;
+    margin-top: 10px;
     float: left;
 }
 #FuckingStupedForm{
     float: left;
+}
+.m-t{
+    margin: 5% 7% 5% 40%;
+}
+footer{
+    margin: 100px;
 }
