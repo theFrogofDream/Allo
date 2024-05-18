@@ -1,0 +1,6 @@
+function GoToForm(){
+
+}
+function buy(){
+
+}
