@@ -5,10 +5,11 @@
 }
 #FuckingStupedForm{
     float: left;
+    margin-bottom: 50px;
 }
 .m-t{
     margin: 5% 7% 5% 40%;
 }
 footer{
-    margin: 100px;
+    margin: 50px 100px;
 }
