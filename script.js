@@ -22,7 +22,7 @@ function buy() {
     ${address ? `Адрес доставки: ${address}` : ''}
   `;
 
-    const url = 'https://pentapulse.ru/shop/'; // Замените на ваш URL для обработки формы
+    const url = 'https://pentapulse.ru/shop/#FuckingStupedForm'; // Замените на ваш URL для обработки формы
     const xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
