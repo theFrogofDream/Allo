@@ -1,4 +1,5 @@
 function buy() {
+    alert('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время.')
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const product = document.getElementById('products').value;
@@ -22,7 +23,7 @@ function buy() {
     ${address ? `Адрес доставки: ${address}` : ''}
   `;
 
-    const url = 'https://pentapulse.ru/shop/#FuckingStupedForm'; // Замените на ваш URL для обработки формы
+    const url = ''; // Замените на ваш URL для обработки формы
     const xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
